@@ -43,8 +43,9 @@
 
 <body>
   <div class="logo">
-    <a href="https://github.com/whiteSoulX/OS_OpenEnd_CPU_Scheduling" target='_blank' rel='noopener noreferrer'><img
-        src="https://github.com/whiteSoulX/OpenEnded/blob/main/images/Ulab%20Logo.png" /></a>
+    <a href="https://github.com/whiteSoulX/OpenEnded" target='_blank' rel='noopener noreferrer'>
+      <img src="https://shorturl.at/fwHTX" alt="Ulab Logo" class="logo-image"  width="80" height="80"/>
+    </a>
   </div>
   <div class="triangle"></div>
   <h1 class="display-4 text-center fw-bold">CPU Scheduling Algorithm Visualiser</h1>
@@ -58,7 +59,7 @@
             </table>
             <div id="show_time_quanta">
               <h4 class="col-form-label" for="time_quanta">Time Quantum(For Round Robin Algorithm)</h4>
-              <input class="form-control" id="time_quanta" type="number" placeholder="90 (by default)" min="2">
+              <input class="form-control" id="time_quanta" type="number" placeholder="2 (by default)" min="2">
             </div>
           </div>
           <div class="btn-toolbar bg-linear" role="toolbar">
@@ -109,10 +110,6 @@
                 </div>
               </div>
             </div>
-            <button type="button"
-              class="btn bg-gradient btn-lg d-flex align-items-center justify-content-between my-4 mx-4 col-md-2"
-              id="vis_btn" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visualise <span
-                class="material-icons">leaderboard</span></button>
             <div class="dropdown-menu shadow">
               <div class="dropdown-item">
                 <button class="btn btn-outline-dark w-100" onclick="FCFS(true)">FCFS</button>
@@ -180,14 +177,6 @@
         <!-- Final Result -->
         <div>
           <div class="col-sm-12">
-            <h5>The best algorithms for these processes is <span role="img" data-toggle="tooltip"
-                data-placement="bottom"
-                title="Based on CPU utilization, Throughput, Turnaround time, Waiting time, Response time"
-                style="opacity: 0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                  viewBox="0 0 32 32">
-                  <path
-                    d="M16 0C7.164 0 0 7.164 0 16s7.164 16 16 16 16-7.164 16-16S24.836 0 16 0zm-2 14a2 2 0 0 1 4 0v10a2 2 0 0 1-4 0V14zm2-3.968a2 2 0 1 1 .001-4.001A2 2 0 0 1 16 10.032z" />
-                </svg></span></h5>
             <ul id="final_result"></ul>
           </div>
         </div>
